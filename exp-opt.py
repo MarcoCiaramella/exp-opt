@@ -10,6 +10,7 @@ operators = ['&', '|', '^']
 def comb(vals, size):
     return list(itertools.product(vals, repeat=size))
 
+# FIXME genera doppioni quanto le espressioni hanno 3 elementi
 def evaluate(expr):
 
   if len(expr) == 3:
