@@ -73,7 +73,6 @@ def search(input_expr, operators, operands):
   for num_ops in range(1, num_ops_max+1):
     print("num_ops", num_ops)
     for expr in get_exprs(operators, operands, num_ops):
-      print(expr)
       if verify(input_expr, expr, operands):
         print(f'expr {expr}')
         return
